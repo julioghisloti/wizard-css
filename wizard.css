@@ -1,0 +1,52 @@
+/* Wizard CSS - By @julioghisloti */
+
+/* Font ============================================================================================================= */
+@font-face {
+	font-family: 'Droid Sans';
+	src: url('font/droidsans.eot');
+	src: url('font/droidsans.eot?#iefix') format('embedded-opentype'),
+	     url('font/droidsans.woff') format('woff'),
+	     url('font/droidsans.ttf') format('truetype'),
+	     url('font/droidsans.svg#droid_sansregular') format('svg');
+
+	font-family: 'Droid Sans Bold';
+	src: url('font/droidsans-bold.eot');
+	src: url('font/droidsans-bold.eot?#iefix') format('embedded-opentype'),
+	     url('font/droidsans-bold.woff') format('woff'),
+	     url('font/droidsans-bold.ttf') format('truetype'),
+	     url('font/droidsans-bold.svg#droid_sansregular') format('svg');
+
+	font-weight: normal;
+	font-style: normal;
+}
+/* Basic Components ================================================================================================= */
+body{font-family: 'Droid Sans';}
+
+.transition{
+	-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; 
+	-ms-transition: all .5s ease; transition: all .5s ease;
+}
+
+/* Colors =========================================================================================================== */
+._blue{background-color: #0099FF !important; color: #fff !important;}
+._blue:hover{background-color: #36AFFF !important;}
+
+._ok{background-color: #00CC66 !important; color: #fff !important;}
+._ok:hover{background-color: #4FDC95 !important;}
+
+._alert{background-color: #FFCC33 !important; color: #fff !important;}
+._alert:hover{background-color: #FFD558 !important; color: #fff !important;}
+
+._error{background-color: #FF4B42 !important; color: #fff !important;}
+._error:hover{background-color: #FF6F68 !important; color: #fff !important;}
+
+/* Text Components ================================================================================================== */
+h1, h2, h3, h4{font-family: 'Droid Sans Bold'; margin: 4px 0 4px 0;}
+h1{font-size: 4em;}
+h2{font-size: 3em;}
+h3{font-size: 2em;}
+h4{font-size: 1.5em;}
+
+/* Form Components ================================================================================================== */
+.bt{background-color: #ccc; border: 0; color: #666; font-size: .9em; height: 33px; padding: 8px;}
+.bt:hover{background-color: #dfdfdf; cursor: pointer;}

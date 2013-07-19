@@ -20,12 +20,16 @@
 	font-style: normal;
 }
 /* Basic Components ================================================================================================= */
-body{font-family: 'Droid Sans';}
+body{font-family: 'Droid Sans'; margin: 0;}
 
 .transition{
 	-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; 
 	-ms-transition: all .5s ease; transition: all .5s ease;
 }
+
+/* Link -------------------------------------------- */
+a, a:link, a:visited, a:active{color: #666; text-decoration: none;}
+a:hover{color: #0099ff;}
 
 /* Colors =========================================================================================================== */
 ._blue{background-color: #0099FF !important; color: #fff !important;}
@@ -48,5 +52,58 @@ h3{font-size: 2em;}
 h4{font-size: 1.5em;}
 
 /* Form Components ================================================================================================== */
-.bt{background-color: #ccc; border: 0; color: #666; font-size: .9em; height: 33px; padding: 8px;}
+/* Buttons */
+.bt{background-color: #ccc; border: 0; color: #666; font-size: .9em; height: 35px; padding: 8px;}
 .bt:hover{background-color: #dfdfdf; cursor: pointer;}
+
+.bt-small{font-size: .7em; height: 20px; padding: 2px;}
+.bt-large{font-size: 1.2em; height: 50px; padding: 8px;}
+.bt-block{font-size: 1em; height: 45px; width: 100%;}
+
+/* Inputs -------------------------------------------- */
+/* Placeholder */
+::-webkit-input-placeholder {color: #fff;} :-moz-placeholder {color: #fff;} ::-moz-placeholder {color: #fff;} 
+:-ms-input-placeholder {color: #fff;}
+
+/* Required */
+input:invalid { -moz-box-shadow: none; }
+:required:focus{border: 2px solid #FF4B42 !important; -moz-box-shadow: none;}
+
+/* Input Basic Style */
+input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="search"], 
+input[type="date"], input[type="url"], select{
+	background-color: #acacac; 
+	border: 2px solid #fff; 
+	color: #666; 
+	font-family: 'Droid Sans';
+	font-size: 1em;
+	font-weight: normal;
+	height: 35px; 
+	outline: none;
+	padding: 0 0 0 4px;
+}
+
+/* Input Hover Style */
+input[type="text"]:hover, input[type="password"]:hover, input[type="number"]:hover, input[type="email"]:hover, 
+input[type="search"]:hover, input[type="url"]:hover{background-color: #ccc;}
+
+/* Input Focus Style */
+input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="email"]:focus, 
+input[type="search"]:focus, input[type="url"]:focus{border: 2px solid #0090f0;}
+
+/* Layout =========================================================================================================== */
+/* Components ------------------------------------- */
+.title{margin: 0 35px 0 5px; font-size: 1.7em; font-weight: bold;}
+.title:hover{color: #acacac; cursor: pointer;}
+
+/* Nav -------------------------------------------- */
+.nav-all{
+	background-color: #ccc;
+	height: 35px;
+	padding: 10px;
+	position: relative;
+	width: 100%;
+}
+.nav{display: inline-block; margin: 5px; position: relative;}
+.nav ul{list-style: none; margin: 0;}
+.nav li{display: inline-block; margin-right: 20px; padding: 5px;}

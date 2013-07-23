@@ -420,7 +420,7 @@ table {
 	font-style: normal;
 }
 /* Basic Components ================================================================================================= */
-body{font-family: 'droidsans'; margin: 0;}
+body{font-family: 'droidsans'; margin: 0; position: relative;}
 
 .transition{
 	-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; 
@@ -517,48 +517,48 @@ input[type="search"]:focus, input[type="url"]:focus{border: 2px solid #0090f0 !i
 	position: relative;
 	width: 950px;
 }
-.navbar_top-menu{display: inline-block; margin: 5px; position: relative;}
+.navbar_top-menu{display: inline-block; margin:0 0 0 5px; position: relative;}
 .navbar_top-menu ul{list-style: none; margin: 0; padding: 0;}
 .navbar_top-menu li{display: inline-block; margin-right: 20px; padding: 5px;}
 .search-navbar_top{border: 2px solid #ccc !important; right: 10px; position: absolute;}
 
-/* Navbar Left ----------------------------------------------------------------------------- */
-.sidebar-all{margin: 7px; float: left; width: 170px;}
-.sidebar-all ul{list-style: none; margin: 0; padding: 0;}
-.sidebar-all li:first-child{background-color: #666; color: #fff; font-size: 1em;}
-.sidebar-all li{background-color: #ccc; border-top: 1px solid #b9b9b9; color: #666; font-size: .9em; padding: 12px;}
+/* Sidebar -------------------------------------------------------------------------------- */
+.sidebar{margin: 7px; float: left; width: 170px;}
+.sidebar ul{list-style: none; margin: 0; padding: 0;}
+.sidebar li{background-color: #ccc; border-top: 1px solid #b9b9b9; color: #666; font-size: .9em; padding: 12px;}
+.sidebar li:first-child{background-color: #666; color: #fff; font-size: 1em;}
 
 /* Content --------------------------------------------------------------------------------- */
 .content{float: left; margin: 7px; width: 722px;}
 
 /* Cycle ----------------------------------------------------------------------------------- */
 .cycle{margin-bottom: 7px; position: relative; width: 100%;}
-.cycle > img{width: 100%; height: auto;}
+.cycle img{width: 100%; height: auto;}
 
-/* Text Proncipal -------------------------------------------------------------------------- */
+/* Text Principal -------------------------------------------------------------------------- */
 .text-principal{
 	background-color: #f1f1f1;
+  float: left;
 	margin-bottom: 14px;
 	padding: 5px;	
 	width: 712px;
 }
 .text-principal img{
-	display: block;
-	float: left;
+	display: inline-block;
+  float:  ;
 	margin: 10px;
 }
 
-/* Thubnail ------------------------------------------------------------------------------- */
-.box-group{width: 100%}
+/* Box ------------------------------------------------------------------------------------ */
 .box{
 	display: inline-block; 
 	background-color: #f1f1f1; 
 	margin-bottom: 14px; 
-	margin-right: 7px; 
+	margin-right: 14px; 
 	overflow: hidden;
-	padding: 5px; 
+	padding: 5px; margin-top: ;
 	position: relative;
-	width: 30.92%;
+	width: 218.5px;
 }
 .box img{width: 100%;}
 ._last-box{margin-right: 0 !important; }

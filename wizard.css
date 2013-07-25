@@ -509,7 +509,7 @@ input[type="search"]:focus, input[type="url"]:focus{border: 2px solid #0090f0 !i
 .title:hover{color: #acacac; cursor: pointer;}
 
 /* Navbar top ----------------------------------------------------------------------------- */
-.navbar_top-all{
+.navbar-top-all{
 	background-color: #ccc;
 	margin-top: 15px;
 	padding-bottom: 10px;
@@ -517,10 +517,10 @@ input[type="search"]:focus, input[type="url"]:focus{border: 2px solid #0090f0 !i
 	position: relative;
 	width: 950px;
 }
-.navbar_top-menu{display: inline-block; margin:0 0 0 5px; position: relative;}
-.navbar_top-menu ul{list-style: none; margin: 0; padding: 0;}
-.navbar_top-menu li{display: inline-block; margin-right: 20px; padding: 5px;}
-.search-navbar_top{border: 2px solid #ccc !important; right: 10px; position: absolute;}
+.navbar-top-menu{display: inline-block; margin:0 0 0 5px; position: relative;}
+.navbar-top-menu ul{list-style: none; margin: 0; padding: 0;}
+.navbar-top-menu li{display: inline-block; margin-right: 20px; padding: 5px;}
+.search-navbar-top{border: 2px solid #ccc !important; right: 10px; position: absolute;}
 
 /* Sidebar -------------------------------------------------------------------------------- */
 .sidebar{margin: 7px; float: left; width: 170px;}
@@ -553,12 +553,10 @@ input[type="search"]:focus, input[type="url"]:focus{border: 2px solid #0090f0 !i
 .box{
 	display: inline-block; 
 	background-color: #f1f1f1; 
-	margin-bottom: 14px; 
-	margin-right: 14px; 
+	margin: 7px; 
 	overflow: hidden;
 	padding: 5px; margin-top: ;
 	position: relative;
-	width: 218.5px;
+	width: 214px;
 }
 .box img{width: 100%;}
-._last-box{margin-right: 0 !important; }

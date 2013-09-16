@@ -463,6 +463,7 @@ p{font-family: 'droidsans'; margin: 5px 0 5px 0;}
   border: 0; 
   color: #666; 
   display: inline-block; 
+  font-family: 'droidsans';
   font-size: .9em;   
   padding: 8px; 
   position: relative; 
@@ -497,7 +498,7 @@ input, select{
   background-color: #acacac; 
   border: 2px solid #acacac; 
   color: #666; 
-  font-family: 'Droid Sans';
+  font-family: 'droidsans';
   font-size: 1em;
   font-weight: normal;
   outline: none;

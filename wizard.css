@@ -419,16 +419,18 @@ table {
 	font-weight: normal: ;	
 	font-style: normal;
 }
+/* Ions ============================================================================================================= */
 /* Basic Components ================================================================================================= */
 body{font-family: 'droidsans'; margin: 0; position: relative;}
 
 .transition{
-	-webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; 
-	-ms-transition: all .5s ease; transition: all .5s ease;
+  -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; 
+  -ms-transition: all .5s ease; transition: all .5s ease;
 }
 .center{margin-left: auto; margin-right: auto;}
+.right{position: absolute; right: 0;}
+.left{position: absolute; left: 0;}
 ._img-right{float: right !important;}
-
 /* Link -------------------------------------------- */
 a, a:link, a:visited, a:active{color: #666; text-decoration: none;}
 a:hover{color: #0099ff;}
@@ -457,14 +459,13 @@ p{font-family: 'droidsans'; margin: 5px 0 5px 0;}
 /* Form Components ================================================================================================== */
 /* Buttons */
 .bt{
-	background-color: #ccc; 
-	border: 0; 
-	color: #666; 
-	display: inline-block; 
-	font-size: .9em; 
-	margin-top: 5px;
-	padding: 8px; 
-	position: relative; 
+  background-color: #ccc; 
+  border: 0; 
+  color: #666; 
+  display: inline-block; 
+  font-size: .9em;   
+  padding: 8px; 
+  position: relative; 
 }
 .bt:hover{background-color: #dfdfdf; cursor: pointer;}
 
@@ -472,6 +473,16 @@ p{font-family: 'droidsans'; margin: 5px 0 5px 0;}
 .bt-large{font-size: 1.2em; height: 50px; padding: 8px;}
 .bt-block{font-size: 1em; height: 45px; width: 100%;}
 
+.bt-menu-dropdown{
+  background: url("lib/icons/menu.png") no-repeat;
+  background-position: center;
+  display: none;
+  height: 16px; 
+  position: absolute;
+  right: 15px;
+  top: 22px;
+  width: 16px;
+}
 /* Inputs -------------------------------------------- */
 /* Placeholder */
 ::-webkit-input-placeholder {color: #fff;} :-moz-placeholder {color: #fff;} ::-moz-placeholder {color: #fff;} 
@@ -482,25 +493,27 @@ input:invalid { -moz-box-shadow: none; }
 :required:focus{border: 2px solid #FF4B42 !important; -moz-box-shadow: none;}
 
 /* Input Basic Style */
-input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="search"], 
-input[type="date"], input[type="url"], select{
-	background-color: #acacac; 
-	border: 2px solid #fff; 
-	color: #666; 
-	font-family: 'Droid Sans';
-	font-size: 1em;
-	font-weight: normal;
-	outline: none;
-	padding: 7px;
+input, select{
+  background-color: #acacac; 
+  border: 2px solid #acacac; 
+  color: #666; 
+  font-family: 'Droid Sans';
+  font-size: 1em;
+  font-weight: normal;
+  outline: none;
+  padding: 7px;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Input Hover Style */
-input[type="text"]:hover, input[type="password"]:hover, input[type="number"]:hover, input[type="email"]:hover, 
-input[type="search"]:hover, input[type="url"]:hover{background-color: #B4B4B4;}
+input:hover{background-color: #B4B4B4;}
 
 /* Input Focus Style */
-input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="email"]:focus, 
-input[type="search"]:focus, input[type="url"]:focus{border: 2px solid #0090f0 !important;}
+input:focus{border: 2px solid #0090f0 !important;}
 
 /* Layout =========================================================================================================== */
 /* Components ----------------------------------------------------------------------------- */
@@ -511,6 +524,7 @@ input[type="search"]:focus, input[type="url"]:focus{border: 2px solid #0090f0 !i
 /* Navbar top ----------------------------------------------------------------------------- */
 .navbar-top-all{
 	background-color: #ccc;
+  height: 40px;
 	margin-top: 15px;
 	padding-bottom: 10px;
 	padding-top: 10px;
@@ -520,8 +534,8 @@ input[type="search"]:focus, input[type="url"]:focus{border: 2px solid #0090f0 !i
 .navbar-top-menu{display: inline-block; margin:0 0 0 5px; position: relative;}
 .navbar-top-menu ul{list-style: none; margin: 0; padding: 0;}
 .navbar-top-menu li{display: inline-block; margin-right: 20px; padding: 5px;}
-.search-navbar-top{border: 2px solid #ccc !important; right: 10px; position: absolute;}
-
+.navbar-top-comps{right: 15px !important;}
+.menu-dropdown-active{display: block !important;}
 /* Sidebar -------------------------------------------------------------------------------- */
 .sidebar{margin: 7px; float: left; width: 170px;}
 .sidebar ul{list-style: none; margin: 0; padding: 0;}
